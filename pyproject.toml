@@ -1,0 +1,25 @@
+[project]
+name = "llm-fireworks"
+version = "0.1a0"
+description = "Access fireworks.ai models via API"
+readme = "README.md"
+authors = [{name = "Simon Willison"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "llm"
+]
+
+[project.urls]
+Homepage = "https://github.com/simonw/llm-fireworks"
+Changelog = "https://github.com/simonw/llm-fireworks/releases"
+Issues = "https://github.com/simonw/llm-fireworks/issues"
+CI = "https://github.com/simonw/llm-fireworks/actions"
+
+[project.entry-points.llm]
+fireworks = "llm_fireworks"
+
+[project.optional-dependencies]
+test = ["pytest"]
